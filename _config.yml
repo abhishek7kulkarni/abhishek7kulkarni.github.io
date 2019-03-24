@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Abhishek Kulkarni"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Sharing my Data Science Journey..."
+  bio              : "Data Science Portfolio"
   location         : "Dublin, Ireland"
   email            :
   links:
@@ -142,7 +142,7 @@ footer:
       # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      # url:
+      url: "https://github.com/abhishek7kulkarni"
     - label: "GitLab"
       icon: "fab fa-fw fa-gitlab"
       # url:
