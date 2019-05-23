@@ -1,6 +1,6 @@
 ---
 layout: archive
-permalink: /data-science/
+permalink: /datascience/
 title: "Data Science Posts"
 author_profile: true
 header:
