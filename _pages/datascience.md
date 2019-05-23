@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: single
 permalink: /datascience/
 title: "Data Science Posts"
 author_profile: true
