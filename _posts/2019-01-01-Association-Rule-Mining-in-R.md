@@ -37,22 +37,8 @@ libraries and the dataset:
 
 ``` r
 library(arules)
-```
-
-    ## Loading required package: Matrix
-
-    ##
-    ## Attaching package: 'arules'
-
-    ## The following objects are masked from 'package:base':
-    ##
-    ##     abbreviate, write
-
-``` r
 library(arulesViz)
 ```
-
-    ## Loading required package: grid
 
 ``` r
 dat <- read.table("http://mathsci.ucd.ie/~brendan/data/Old/nltcs.txt",header=TRUE)
@@ -76,7 +62,7 @@ head(dat)
 
 In this analysis, we will be utilizing support, confidence and lift to
 guide through and mine the rules. We will make use of Fréchet bounds and
-a priori algorithm to calculate the support, confidence and lift. Then,
+apriori algorithm to calculate the support, confidence and lift. Then,
 we will calculate individual probabilities of antecedents and
 consequents. Let us approach the rule mining with two perspectives: in
 the first one, we will keep on changing thresholds for support and
@@ -156,8 +142,6 @@ fit<-apriori(nltcs,parameter=list(support=sup, confidence=conf))
 fit<-sort(fit,by="support")
 plot(fit, method = "two-key plot")
 ```
-
-    ## To reduce overplotting, jitter is added! Use jitter = 0 to prevent jitter.
 
 ![](1_files/figure-markdown_github/unnamed-chunk-3-1.png)
 
