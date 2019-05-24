@@ -336,13 +336,17 @@ To conclude, association rules help us to mine interesting rules from
 any convoluted dataset. With proper utilization of Fréchet bounds,
 quality measures such as support, confidence and lift, we were able to
 understand our dataset and mine rules. This can be used for further
-statistics. We got many insights some of which are summarized here: 1.
-Disabled people are more likely to manage their daily tasks, such as
+statistics.
+
+We got many insights some of which are summarized here:    
+1. Disabled people are more likely to manage their daily tasks, such as
 eating, taking medicine, telephoning pretty well but they are not that
-comfortable doing heavy housework. 2. It is evident that doing heavy
+comfortable doing heavy housework.    
+2. It is evident that doing heavy
 housework has high individual associations with grocery shopping,
 getting about outside and traveling, which indicates that if the later 3
 are seen, the person is likely to face difficulty in doing heavy
-housework. 3. If a person is facing issues in getting around inside and
+housework.    
+3. If a person is facing issues in getting around inside and
 doing heavy house work, there is 93% chance that he/she will face issues
 in getting about outside.
