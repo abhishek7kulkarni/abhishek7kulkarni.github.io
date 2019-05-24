@@ -60,11 +60,10 @@ head(dat)
     ## 5  0.004635209
     ## 6  0.037081672
 
-In this analysis, we will be utilizing support, confidence and lift to
-guide through and mine the rules. We will make use of Fréchet bounds and
-apriori algorithm to calculate the support, confidence and lift. Then,
-we will calculate individual probabilities of antecedents and
-consequents. Let us approach the rule mining with two perspectives: in
+In this analysis, we will be utilizing **support**, **confidence** and **lift** to
+guide through and mine the rules. We will make use of **Fréchet bounds** and
+**apriori algorithm** to calculate the support, confidence and lift.
+Let us approach the rule mining with two perspectives: in
 the first one, we will keep on changing thresholds for support and
 confidence and arrive at reasonable thresholds. Secondly, we will mine
 rules with different number of elements in the antecedent.
@@ -96,7 +95,7 @@ nltcs <- as(nltcsmat,"transactions")
 ```
 
 With initial values of support and confidence being 0.1, a priori
-algorithm mined 21483 rules. To understand the number of rules with
+algorithm mined **21483 rules**. To understand the number of rules with
 variations in support and confidence, let us visually represent the
 rules with the help of support vs. confidence two-key plot. From this
 plot, it is evident that a large number of rules are in lower values of
@@ -145,7 +144,7 @@ plot(fit, method = "two-key plot")
 
 ![](1_files/figure-markdown_github/unnamed-chunk-3-1.png)
 
-Let us increase the supprt and confidence thresholds to see if we can
+Let us increase the support and confidence thresholds to see if we can
 find interesting rules.
 
 ``` r
@@ -186,7 +185,7 @@ fit<-apriori(nltcs,parameter=list(support=sup, confidence=conf))
 fit<-sort(fit,by="support")
 ```
 
-Increasing the confidence threshold to 0.5 gave 21215 rules, suggesting
+Increasing the confidence threshold to 0.5 gave **21215 rules**, suggesting
 that large number of observations have high confidence. So, let us
 increase the support threshold and have a look at the number of rules
 mined, since only the most statistically evident and handful number of
@@ -237,7 +236,7 @@ inspect(fit)
     ## [8] {Y7}  => {Y13} 0.4355706 0.6446457  1.307350  9397
 
 With support and confidence thresholds set at 0.4 and 0.5 respectively,
-we mined 8 rules. The redundant rules are removed from the list so that
+we mined **8 rules**. The redundant rules are removed from the list so that
 we analyse only the significant rules. Here, the tabulation shows the 8
 rules mined and the corresponding quality measures. The -Inf and Nan for
 Standardized Lift for rules \[7\] and \[8\] indicate that lower bounds,
