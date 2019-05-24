@@ -325,7 +325,7 @@ fit<-sort(fit,by="support")
 plot(fit, method = "two-key plot")
 ```
 
-![](1_files/figure-markdown_github/unnamed-chunk-6-1.png)
+![](unnamed-chunk-6-1.png)
 
 It is evident from the Two-key plot that we have very few rules with
 support greater than 0.5. Most of the rules are equally distributed with
