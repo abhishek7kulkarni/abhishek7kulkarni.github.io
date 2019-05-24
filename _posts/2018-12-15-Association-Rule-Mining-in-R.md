@@ -1,6 +1,6 @@
 ---
 title: "Association Rule Mining in R"
-date: 2019-01-01
+date: 2018-12-15
 tags: [Association Rules, Data Mining, Rules, Data Science, Machine Learning]
 header:
   image: "/images/liffey.jpg"
