@@ -1,6 +1,8 @@
 ---
 title: "About"
 permalink: /about/
+header:
+  image: "images/liffey.jpg"
 ---
 
 Sharing my Data Science Journey...
