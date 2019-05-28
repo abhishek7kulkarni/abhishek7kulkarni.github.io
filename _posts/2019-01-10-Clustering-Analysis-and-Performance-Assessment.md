@@ -4,6 +4,7 @@ date: 2019-01-10
 tags: [K-Means, K-Medoids, Clustering Analysis, Data Mining, Data Science, Machine Learning]
 header:
   image: "/images/liffey.jpg"
+categories: datascience
 ---
 
 
