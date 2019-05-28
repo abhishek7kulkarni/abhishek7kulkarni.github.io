@@ -1,6 +1,6 @@
 ---
 title: "Logistic Regression and Performance Assessment"
-date: 2018-12-15
+date: 2019-02-25
 tags: [Logistic Regression, Regression, Data Science, Machine Learning]
 header:
   image: "/images/liffey.jpg"
