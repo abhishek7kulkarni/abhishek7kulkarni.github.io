@@ -109,6 +109,30 @@ conf = 0.1
 fit<-apriori(nltcs,parameter=list(support=sup, confidence=conf))
 ```
 
+    ## Apriori
+    ##
+    ## Parameter specification:
+    ##  confidence minval smax arem  aval originalSupport maxtime support minlen
+    ##         0.1    0.1    1 none FALSE            TRUE       5     0.1      1
+    ##  maxlen target   ext
+    ##      10  rules FALSE
+    ##
+    ## Algorithmic control:
+    ##  filter tree heap memopt load sort verbose
+    ##     0.1 TRUE TRUE  FALSE TRUE    2    TRUE
+    ##
+    ## Absolute minimum support count: 2157
+    ##
+    ## set item appearances ...[0 item(s)] done [0.00s].
+    ## set transactions ...[16 item(s), 21574 transaction(s)] done [0.01s].
+    ## sorting and recoding items ... [16 item(s)] done [0.00s].
+    ## creating transaction tree ... done [0.01s].
+    ## checking subsets of size 1 2 3 4 5 6 7 8 9 10
+
+    ## Warning in apriori(nltcs, parameter = list(support = sup, confidence =
+    ## conf)): Mining stopped (maxlen reached). Only patterns up to a length of 10
+    ## returned!
+
     ##  done [0.03s].
     ## writing ... [21483 rule(s)] done [0.00s].
     ## creating S4 object  ... done [0.01s].
@@ -128,6 +152,30 @@ conf = 0.5
 
 fit<-apriori(nltcs,parameter=list(support=sup, confidence=conf))
 ```
+
+    ## Apriori
+    ##
+    ## Parameter specification:
+    ##  confidence minval smax arem  aval originalSupport maxtime support minlen
+    ##         0.5    0.1    1 none FALSE            TRUE       5     0.1      1
+    ##  maxlen target   ext
+    ##      10  rules FALSE
+    ##
+    ## Algorithmic control:
+    ##  filter tree heap memopt load sort verbose
+    ##     0.1 TRUE TRUE  FALSE TRUE    2    TRUE
+    ##
+    ## Absolute minimum support count: 2157
+    ##
+    ## set item appearances ...[0 item(s)] done [0.00s].
+    ## set transactions ...[16 item(s), 21574 transaction(s)] done [0.01s].
+    ## sorting and recoding items ... [16 item(s)] done [0.00s].
+    ## creating transaction tree ... done [0.01s].
+    ## checking subsets of size 1 2 3 4 5 6 7 8 9 10
+
+    ## Warning in apriori(nltcs, parameter = list(support = sup, confidence =
+    ## conf)): Mining stopped (maxlen reached). Only patterns up to a length of 10
+    ## returned!
 
     ##  done [0.03s].
     ## writing ... [21215 rule(s)] done [0.00s].
@@ -149,6 +197,28 @@ conf = 0.5
 
 fit<-apriori(nltcs,parameter=list(support=sup, confidence=conf))
 ```
+
+    ## Apriori
+    ##
+    ## Parameter specification:
+    ##  confidence minval smax arem  aval originalSupport maxtime support minlen
+    ##         0.5    0.1    1 none FALSE            TRUE       5     0.4      1
+    ##  maxlen target   ext
+    ##      10  rules FALSE
+    ##
+    ## Algorithmic control:
+    ##  filter tree heap memopt load sort verbose
+    ##     0.1 TRUE TRUE  FALSE TRUE    2    TRUE
+    ##
+    ## Absolute minimum support count: 8629
+    ##
+    ## set item appearances ...[0 item(s)] done [0.00s].
+    ## set transactions ...[16 item(s), 21574 transaction(s)] done [0.01s].
+    ## sorting and recoding items ... [6 item(s)] done [0.00s].
+    ## creating transaction tree ... done [0.01s].
+    ## checking subsets of size 1 2 done [0.00s].
+    ## writing ... [8 rule(s)] done [0.00s].
+    ## creating S4 object  ... done [0.00s].
 
 ``` r
 fit<-sort(fit,by="support")
@@ -227,6 +297,28 @@ conf = 0.5
 
 fit<-apriori(nltcs,parameter=list(support=sup, confidence=conf))
 ```
+
+    ## Apriori
+    ##
+    ## Parameter specification:
+    ##  confidence minval smax arem  aval originalSupport maxtime support minlen
+    ##         0.5    0.1    1 none FALSE            TRUE       5     0.3      1
+    ##  maxlen target   ext
+    ##      10  rules FALSE
+    ##
+    ## Algorithmic control:
+    ##  filter tree heap memopt load sort verbose
+    ##     0.1 TRUE TRUE  FALSE TRUE    2    TRUE
+    ##
+    ## Absolute minimum support count: 6472
+    ##
+    ## set item appearances ...[0 item(s)] done [0.00s].
+    ## set transactions ...[16 item(s), 21574 transaction(s)] done [0.01s].
+    ## sorting and recoding items ... [7 item(s)] done [0.00s].
+    ## creating transaction tree ... done [0.00s].
+    ## checking subsets of size 1 2 3 4 done [0.00s].
+    ## writing ... [58 rule(s)] done [0.00s].
+    ## creating S4 object  ... done [0.00s].
 
 ``` r
 fit<-sort(fit,by="support")
