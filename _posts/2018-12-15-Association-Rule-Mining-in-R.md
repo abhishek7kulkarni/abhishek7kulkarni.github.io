@@ -97,7 +97,7 @@ nltcs <- as(nltcsmat,"transactions")
 With initial values of support and confidence being 0.1, a priori
 algorithm mined **21483 rules**. To understand the number of rules with
 variations in support and confidence, let us visually represent the
-rules with the help of support vs. confidence two-key plot. From this
+rules with the help of support vs. confidence two-key plot. From this
 plot, it is evident that a large number of rules are in lower values of
 support, with interesting rules lying in higher values of support and
 confidence.
