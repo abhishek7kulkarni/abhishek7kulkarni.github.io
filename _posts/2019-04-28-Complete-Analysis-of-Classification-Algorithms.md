@@ -3,7 +3,7 @@ title: "Complete Analysis of Classification Algorithms"
 date: 2019-04-28
 tags: [Classification, Data Science, Machine Learning, Logistic Regression, Classification Trees, Bagging, Random Forest, Boosting, Support Vector Machine, Bootstrapping, k-Fold Cross Validation]
 header:
-  image: "/images/ucdblue.JPG"
+  image: "/images/ucdsci.JPG"
 categories: DataScience
 ---
 
