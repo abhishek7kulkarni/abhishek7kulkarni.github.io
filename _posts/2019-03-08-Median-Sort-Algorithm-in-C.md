@@ -7,7 +7,7 @@ header:
 categories: programming
 ---
 
-Understanding the Median Sort:
+## Understanding the Median Sort:
 
 	Calculating the median of a given random array
 	Sorting the array by recursive median computations
@@ -15,7 +15,7 @@ Understanding the Median Sort:
 	Searching by chop search
 	Benchmarks for naive search and chop search
 
-Sample Output:
+## Sample Output:
 -----------------------------------------------------------------------------------------------
 Please enter the number of elements:
 10
@@ -103,7 +103,7 @@ Average case: In the average case, the time complexity is O(log n). This also re
 -----------------------------------------------------------------------------------------------
 
 
-#Program:
+## Program:
 
 ``` c
 #include<stdio.h>

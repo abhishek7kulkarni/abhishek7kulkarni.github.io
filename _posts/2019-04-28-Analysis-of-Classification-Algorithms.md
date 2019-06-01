@@ -54,23 +54,21 @@ Given labelled training data, the Support Vector Machine algorithm outputs an op
 In addition to accuracy, the area under the curve of the ROC curves will be calculated for each model. The area under the curve represents how much model is capable of distinguishing between classes. We believe that the combination of the accuracy and the area under the curve of the ROC curves provide sufficient metrics to assess model fit of all methods in three approaches.
 
 
-
-
-
-Results
+## Results
 
 The mentioned models are built on the data by three approaches. In the first approach, the data are split randomly into training and test data. 75% of observations belong to the training data and the rest 25% belong to the test data. The model is trained using the training data and the back pain classes of the test data are predicted. Then the accuracy is computed. The results are tabulated in Tab.1 for training data and test data.
 
-| Model	| Training Data Accuracy | Test Data Accuracy |
-| ------------- |:-------------:| -----:|
-|Logistic Regression |	100 |	88.42 |
-|Classification Trees |	93.68 |	87.37 |
-|Bagging |	95.44 |	90.53 |
-|Random Forest |	100 |	89.47 |
-|Boosting – Breiman |	100 |	89.47 |
-|Boosting – Freund |	100 |	89.47 |
-|Boosting – Zhu |	100 |	95.79 |
-|SVM – Radial Basis kernel |	97.89 |	90.53 |
-|SVM – Polynomial kernel |	98.59 |	85.26 |
-|SVM – Linear kernel |	98.59 |	85.26 |
+| Model                     	| Training Data Accuracy | Test Data Accuracy |
+| --------------------------- |------------------------| -------------------|
+|Logistic Regression          |	100                    |	88.42             |
+|Classification Trees         |	93.68                  |	87.37             |
+|Bagging                      |	95.44                  |	90.53             |
+|Random Forest                |	100                    |	89.47             |
+|Boosting – Breiman           |	100                    |	89.47             |
+|Boosting – Freund            |	100                    |	89.47             |
+|Boosting – Zhu               |	100                    |	95.79             |
+|SVM – Radial Basis kernel    |	97.89                  |	90.53             |
+|SVM – Polynomial kernel      |	98.59                  |	85.26             |
+|SVM – Linear kernel          |	98.59                  |	85.26             |
+
 Tab. 1

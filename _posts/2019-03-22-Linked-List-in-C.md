@@ -7,7 +7,7 @@ header:
 categories: programming
 ---
 
-Understanding the Linked List:
+## Understanding the Linked List:
 
     Adding new cell
     Pushing new cells to the List
@@ -18,7 +18,7 @@ Understanding the Linked List:
     De-allocate the cells in the list
     Count the number of cells in the list
 
-Sample Output:
+## Sample Output:
 
 
       Pushing new cells with values: 36, 1, 6, 12, 4:
@@ -54,7 +54,7 @@ Sample Output:
 
 
 
-Program:
+## Program:
 
 ```c
 #include<stdio.h>
