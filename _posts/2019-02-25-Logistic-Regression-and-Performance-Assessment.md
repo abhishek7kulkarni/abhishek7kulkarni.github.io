@@ -3,7 +3,7 @@ title: "Logistic Regression and Performance Assessment"
 date: 2019-02-25
 tags: [Logistic Regression, Regression, Data Science, Machine Learning]
 header:
-  image: "/images/ucdblue.jpg"
+  image: "/images/ucdblue.JPG"
 categories: programming
 ---
 Let us explore the Titanic Dataset and use Logistic Regression to explore the survival of passengers on the Titanic. The dataset includes 1313 rows corresponding to the people that boarded the Titanic. We have 10 columns of which, we are interested in passengers’ Age, Gender, Class and Survival State. Of these 4 variables, Gender, Class and Survival State are categorical and Age is numeric.

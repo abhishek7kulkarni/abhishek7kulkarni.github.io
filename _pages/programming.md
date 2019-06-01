@@ -4,7 +4,7 @@ permalink: /programming/
 title: "Programming Posts"
 author_profile: true
 header:
-  image: "images/ucdblue.jpg"
+  image: "images/ucdblue.JPG"
 ---
 
 <ul>

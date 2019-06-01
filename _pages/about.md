@@ -2,7 +2,7 @@
 title: "About"
 permalink: /about/
 header:
-  image: "images/ucdsci.jpg"
+  image: "images/ucdsci.JPG"
 ---
 
 Sharing my Journey in Data Science and Programming...

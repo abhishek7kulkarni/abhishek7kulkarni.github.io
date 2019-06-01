@@ -3,7 +3,7 @@ title: "Clustering Analysis and Performance Assessment"
 date: 2019-01-10
 tags: [K-Means, K-Medoids, Clustering Analysis, Data Mining, Data Science, Machine Learning]
 header:
-  image: "/images/ucdsci.jpg"
+  image: "/images/ucdsci.JPG"
 categories: datascience
 ---
 
