@@ -1,5 +1,5 @@
 ---
-title: "Data Visualization: D3-JS"
+title: "Interactive Data Visualization in D3-JS"
 date: 2018-11-18
 tags: [Data Visualization, Data Science, Machine Learning, D3, Java Script, Interactive]
 header:
