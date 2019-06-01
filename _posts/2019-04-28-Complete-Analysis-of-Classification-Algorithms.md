@@ -1,5 +1,5 @@
 ---
-title: "Analysis of Classification Algorithms"
+title: "Complete Analysis of Classification Algorithms"
 date: 2019-02-25
 tags: [Classification, Data Science, Machine Learning, Logistic Regression, Classification Trees, Bagging, Random Forest, Boosting, Support Vector Machine]
 header:
@@ -158,3 +158,22 @@ We examined how logistic regression, classification trees, bagging, random fores
 We observed that in the first approach the boosting with SAMME algorithm performed the best with accuracy of 95.79% and area under RC curve of 0.95. Moving to the bootstrapping approach, random forest performed the best with accuracy of 94.7% and area under the ROC curve of 0.94. In the k-Fold cross validation approach, support vector machine with polynomial and linear kernels performed the best with accuracies of 93.57% and areas under the ROC curve of 0.938.
 
 In this analysis, k-Fold cross validation approach is most reliable since we build the models iteratively with different sets of training and test data. In this approach, support vector machine with polynomial and linear kernels performed the best with accuracy of 93.57% and area under the ROC curve of 0.938.
+
+
+References
+
+	Hewa, K. (2018). K-Fold Cross Validation. Retrieved from Medium.com: https://medium.com/datadriveninvestor/k-fold-cross-validation-6b8518070833
+
+	Solutions, S. (2018). What is Logistic Regression? Retrieved from Statistics Solutions: https://www.statisticssolutions.com/what-is-logistic-regression/
+
+	Seif, G. (2018). A Guide to Decision Trees for Machine Learning and Data Science. Retrieved from towardsdatascience.com: https://towardsdatascience.com/a-guide-to-decision-trees-for-machine-learning-and-data-science-fe2607241956
+
+	Brownlee, J. (2016). Retrieved from https://machinelearningmastery.com/bagging-and-random-forest-ensemble-algorithms-for-machine-learning/
+
+	Donges, N. (2018). The Random Forest Algorithm. Retrieved from towardsdatascience.com: https://towardsdatascience.com/the-random-forest-algorithm-d457d499ffcd
+
+	D'Souza, J. (2018). A Quick Guide to Boosting in ML. Retrieved from medium.com: https://medium.com/greyatom/a-quick-guide-to-boosting-in-ml-acf7c1585cb5
+
+	Patel, S. (2017). Chapter 2 : SVM (Support Vector Machine) — Theory. Retrieved from medium.com: https://medium.com/machine-learning-101/chapter-2-svm-support-vector-machine-theory-f0812effc72
+
+	Brownlee, J. (2018). Retrieved from https://machinelearningmastery.com/a-gentle-introduction-to-the-bootstrap-method/
