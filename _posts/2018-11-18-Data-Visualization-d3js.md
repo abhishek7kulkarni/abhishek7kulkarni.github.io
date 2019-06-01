@@ -9,4 +9,4 @@ categories: Programming
 
 Data Visualization in D3 JS library.
 
-[Interactive Data Visualization](https://abhishek7kulkarni.github.io/d3.html)
+[Interactive Data Visualization](https://abhishek7kulkarni.github.io/d3/)
