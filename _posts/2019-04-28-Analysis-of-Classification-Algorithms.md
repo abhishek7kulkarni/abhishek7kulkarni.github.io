@@ -88,3 +88,70 @@ In the second approach, the bootstrapping is carried out. The sampling with repl
 | SVM – Polynomial kernel	    | 99.21                  | 89.40              |
 | SVM – Linear kernel       	| 99.21	                 |89.40               |
 Tab. 2
+
+
+In the third approach, the data set is split into a K=10 number folds where each fold is used as a testing set iteratively. In each iteration, the 9 remaining folds form our training data. In each iteration, the models are built with training data and the predictions are made on the test data. All the K accuracies are computed for each model. Finally the average of the K accuracies are computed for each model. These results are tabulated in the Tab. 3.
+
+The area under the curve of the ROC curves are then calculated. The area of 0.5 represents a random model with little / no predicting power and the area of 1.0 represents the full predicting capacity. The areas under the curve are recorded for the mentioned algorithms with data split in three approaches in Tab. 4.
+
+| Model	                        | k-Fold CV Accuracy |
+|-------------------------------| -------------------|
+| Logistic Regression	          | 90.49              |
+| Classification Trees	        | 91.22              |
+| Bagging	                      | 90.94              |
+| Random Forest	                | 92.39              |
+| Boosting – Breiman	          | 93.27              |
+| Boosting – Freund	            | 90.64              |
+| Boosting – Zhu	              | 92.11              |
+| SVM – Radial Basis kernel	    | 93.56              |
+| SVM – Polynomial kernel	      | 93.57              |
+| SVM – Linear kernel	          | 93.57              |
+Tab. 3
+
+
+| Model	                      | AUC: Data Splitting	| AUC: Bootstrapping | AUC: k-Fold CV |
+| ----------------------------|---------------------|--------------------|----------------|
+| Logistic Regression	        | 0.8764600           |	0.9285360	         | 0.9063154      |
+| Classification Trees        |	0.8714349	          | 0.8379249          | 0.9152690      |
+| Bagging                     |	0.9055258           |	0.8938283	         | 0.9169252      |
+| Random Forest	              | 0.8941622           |	**0.9459750**      | 0.9261950      |
+| Boosting – Breiman          |	0.8926025	          | 0.9266547          | 0.9338215      |
+| Boosting – Freund           |	0.8941622	          | 0.9382826          | 0.9054083      |
+| Boosting – Zhu              |	**0.9541554**	      | 0.8958824	         | 0.9204418      |
+| SVM – Radial Basis kernel	  | 0.9055258           |	0.9287120	         | 0.9360320      |
+| SVM – Polynomial kernel     |	0.8533868          	| 0.8919499	         | **0.9380887**  |
+| SVM – Linear kernel	        | 0.8533868           | 0.8919499	         | **0.9380887**  |
+Tab. 4
+
+
+## Discussion
+
+We will now go through the accuracies and the area under the curve of the ROC curves of the models built in the three approaches. In the first approach, the data is split into training data and test data. The accuracies of training data and the test data are recorded in Tab. 1. It is evident that the training data accuracies for all the models are higher than the accuracies of the test data. We have logistic regression, random forest, boosting by Breiman, boosting by Freund and boosting by Zhu models with 100% accuracy. Having mentioned that, we cannot fully rely on these accuracies since the training data itself was taken for predicting the accuracies. The rest of the models have good accuracies of above 90% for the training data.
+
+When we move to the test data, we notice that the accuracies are not as high as the training data. We have the Boosting by Zhu model with highest accuracy of 95.79%. This accuracies can be relied on, since the fresh data is being used for prediction. With the exception being bagging, boosting by Zhu and SVM with radial basis kernel, all the remaining models have accuracies below 90%.
+
+Coming to the area under the curve of the ROC curves with data splitting, these are recorded in Tab. 4. We notice that these areas are quite close to the test data accuracies. As agreed by the test data accuracies, the highest area of 0.95 corresponds to the Boosting model by Zhu which is built on SAMME algorithm.
+
+In the second approach which samples data by replacement, the recorded training data accuracies and the test data accuracies are recorded in Tab. 2. It is evident that the random forest, boosting by Breiman, boosting by Freund and boosting by Zhu models performed exceptionally well with 100% accuracy on the training data since the same data is used for building the model. As with the first approach, the rest of the models have good accuracies of above 90%.
+
+When we look at the test data accuracies of these models, we notice that the highest accuracy corresponds to the random forest model with 94.7%. We also notice that the accuracies of test data are lower than that of the training data. This behaviour is similar to the first approach. The test data acts as Out Of Box observations. So, the accuracies will not be as high as the training data accuracies. Compared to the test data accuracies of the first approach, we see a significant increase in test data accuracies of this bootstrapping approach, where most of the models achieve accuracies higher that 90%.
+
+The areas under the ROC curves for bootstrapped data are shown in the Tab. 4. While we notice significant improvisation in the areas compared to the first approach, we see that random forest model has the highest area under the curve of 0.945. As earlier, accuracy and area under the curve agree that the random forest is the best model when bootstrapping is incorporated.
+
+Coming to the third approach, the accuracies are recorded in Tab. 3. In this approach, k-Fold cross validation is done on the data with 10 data folds. In each iteration the fold becomes the test data and the rest of the data forms the training data. The accuracies of the test data are recorded here. We see that the accuracies of all the models are above 90%, indicating that the data is fit very well by the models. Though all the models have accuracies above 90%, the highest accuracy is 93.57%. This belongs to the support vector machine with polynomial and linear kernels. Both polynomial and linear kernels have the exact same accuracy when modelled by k-Fold cross validation.
+
+The areas under the ROC curves are tabulated for k-Fold cross validation in Tab. 4. In agreement with the accuracies, the highest area under the curve correspond to SVM with polynomial and linear kernels. Also, the areas under the ROC curves for all models are more than 0.9 indicating that the models fitted the data well.
+
+We have three different models with highest performances in the three approaches. This inconsistency is due to the random data being take for the training and the test data. The most reliable approach here is the k-Fold cross validation. This is because, we iteratively form different training and test data with each fold. Although it take quite some time to run the k-Fold cross validation (around 15 minutes), the results are highly reliable.
+
+Also, it is evident that the highest  accuracies decrease as we move from first approach (95.79%) to second approach (94.7%) and finally the third approach (93.57%). This behaviour is also observed in the areas under the ROC curves, where the highest area in first observed is 0.95. In the second and third approaches, the areas under the curve are 0.94 and 0.93 respectively.
+
+In the first approach, the accuracies had more variation throughout the various models (85% to 95%). Coming to the second approach, this variation was narrowed by bootstrapping the data. The different models have accuracies between 89% and 95%. With the k-Fold cross validation as our third approach, the accuracies of all models converged between 90% and 94%. This behaviour is also observed in the areas under the ROC curves. The first approach had areas between 0.85 and 0.95. The third approach narrowed the areas between 0.9 and 0.94.
+
+## Conclusion
+
+We examined how logistic regression, classification trees, bagging, random forest, boosting with AdaBoost.M1 by Breiman, boosting with AdaBoost.M1 by Freund and boosting with SAMME by Zhu, support vector machine with radial basis, polynomial and linear kernels models the data differently. The built the model in three approaches: by splitting data as test and training set, by bootstrapping and by k-Fold cross validation. To assess the performance, we used accuracy and area under the ROC curve metrics.
+
+We observed that in the first approach the boosting with SAMME algorithm performed the best with accuracy of 95.79% and area under RC curve of 0.95. Moving to the bootstrapping approach, random forest performed the best with accuracy of 94.7% and area under the ROC curve of 0.94. In the k-Fold cross validation approach, support vector machine with polynomial and linear kernels performed the best with accuracies of 93.57% and areas under the ROC curve of 0.938.
+
+In this analysis, k-Fold cross validation approach is most reliable since we build the models iteratively with different sets of training and test data. In this approach, support vector machine with polynomial and linear kernels performed the best with accuracy of 93.57% and area under the ROC curve of 0.938.
