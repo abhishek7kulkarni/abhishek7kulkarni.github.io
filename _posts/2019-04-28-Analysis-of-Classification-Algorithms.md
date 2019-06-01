@@ -86,7 +86,8 @@ In the second approach, the bootstrapping is carried out. The sampling with repl
 | Boosting – Zhu            	| 100                    | 89.51              |
 | SVM – Radial Basis kernel 	| 98.16                  | 93.38              |
 | SVM – Polynomial kernel	    | 99.21                  | 89.40              |
-| SVM – Linear kernel       	| 99.21	                 |89.40               |
+| SVM – Linear kernel       	| 99.21	                 | 89.40              |
+
 Tab. 2
 
 
@@ -106,6 +107,7 @@ The area under the curve of the ROC curves are then calculated. The area of 0.5 
 | SVM – Radial Basis kernel	    | 93.56              |
 | SVM – Polynomial kernel	      | 93.57              |
 | SVM – Linear kernel	          | 93.57              |
+
 Tab. 3
 
 
@@ -121,6 +123,7 @@ Tab. 3
 | SVM – Radial Basis kernel	  | 0.9055258           |	0.9287120	         | 0.9360320      |
 | SVM – Polynomial kernel     |	0.8533868          	| 0.8919499	         | **0.9380887**  |
 | SVM – Linear kernel	        | 0.8533868           | 0.8919499	         | **0.9380887**  |
+
 Tab. 4
 
 
