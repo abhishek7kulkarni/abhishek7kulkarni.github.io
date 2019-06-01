@@ -7,7 +7,6 @@ header:
 categories: programming
 ---
 
-# Median Sort in C
 Understanding the Median Sort:
 
 	Calculating the median of a given random array
@@ -103,7 +102,7 @@ Average case: In the average case, the time complexity is O(log n). This also re
 -----------------------------------------------------------------------------------------------
 
 
-
+#Program:
 
 ``` c
 #include<stdio.h>
