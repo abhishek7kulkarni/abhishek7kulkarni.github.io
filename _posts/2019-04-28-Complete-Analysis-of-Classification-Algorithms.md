@@ -7,7 +7,7 @@ header:
 categories: DataScience
 ---
 
-## Abstract
+**Abstract:**
 
 In this analysis, we have the data pertaining to individuals suffering from back pain. We have many clinical parameters that, in combination, determine the back pain type which is a binary outcome. We will use several classification techniques such as, logistic regression, classification trees, bagging, random forest, boosting and support vector machine to model the outcome.
 

@@ -7,7 +7,7 @@ header:
 categories: Programming
 ---
 
-## Understanding the Median Sort:
+**Understanding the Median Sort:**
 
 	Calculating the median of a given random array
 	Sorting the array by recursive median computations

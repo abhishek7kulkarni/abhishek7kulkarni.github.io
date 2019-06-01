@@ -7,7 +7,7 @@ header:
 categories: Programming
 ---
 
-Data Visualization in D3 JS library.
+**Data Visualization in D3 JS library.**
 
 ## World-o-pedia:
 The visualization has become the integral part of the day to day activities. In this scenario visualizing the data with the proper mode or type along with the colour, shape and size makes an individual to understand it better with better effectiveness. As the name suggest this visualization is mixture of world information with the encyclopaedia along the years from 1960 to 2017.  

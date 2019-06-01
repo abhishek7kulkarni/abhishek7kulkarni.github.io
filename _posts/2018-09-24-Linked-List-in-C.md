@@ -7,7 +7,7 @@ header:
 categories: Programming
 ---
 
-## Understanding the Linked List:
+**Understanding the Linked List:**
 
     Adding new cell
     Pushing new cells to the List
