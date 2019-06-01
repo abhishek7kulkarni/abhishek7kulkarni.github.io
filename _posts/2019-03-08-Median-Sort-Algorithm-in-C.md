@@ -1,9 +1,9 @@
 ---
 title: "Median Sort and Search in C"
 date: 2019-03-08
-tags: [Median Sort, Sort, Search, C, Algrithm, Benchmark, Chop Search]
+tags: [Median Sort, Sort, Search, C, Algorithm, Benchmark, Chop Search]
 header:
-  image: "/images/ucdblue.JPG"
+  image: "/images/liffey.JPG"
 categories: programming
 ---
 
@@ -15,6 +15,7 @@ Understanding the Median Sort:
 	Searching by chop search
 	Benchmarks for naive search and chop search
 
+Sample Output:
 -----------------------------------------------------------------------------------------------
 Please enter the number of elements:
 10
