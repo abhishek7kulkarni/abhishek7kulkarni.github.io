@@ -8,7 +8,7 @@ header:
 ---
 
 <ul>
-  {% for post in site.categories.programming %}
+  {% for post in site.categories.Programming %}
     <li>
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       {{ post.excerpt }}

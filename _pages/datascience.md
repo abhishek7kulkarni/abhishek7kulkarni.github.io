@@ -8,7 +8,7 @@ header:
 ---
 
 <ul>
-  {% for post in site.categories.datascience %}
+  {% for post in site.categories.DataScience %}
     <li>
       <h2><a href="{{ post.url }}">{{ post.title }}</a></h2>
       {{ post.excerpt }}

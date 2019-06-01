@@ -4,7 +4,7 @@ date: 2019-03-08
 tags: [Linked List, Data Structure, C, Algorithm]
 header:
   image: "/images/ucdsci.JPG"
-categories: programming
+categories: Programming
 ---
 
 ## Understanding the Linked List:
