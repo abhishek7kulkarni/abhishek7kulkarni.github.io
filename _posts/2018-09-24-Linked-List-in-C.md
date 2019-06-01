@@ -1,6 +1,6 @@
 ---
 title: "Linked List in C"
-date: 2019-03-08
+date: 2018-09-24
 tags: [Linked List, Data Structure, C, Algorithm]
 header:
   image: "/images/ucdsci.JPG"
