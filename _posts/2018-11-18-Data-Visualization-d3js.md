@@ -28,4 +28,4 @@ Bar graph with select and hover option: As I wanted to display the information o
 
 ### To interact, please select the desired year to display the population of the 15 countries in the bar graph. Then, click on the desired bar (country). The wikipedia page of the corresponding country in the selected year will be loaded.
 
-[Interactive Data Visualization](https://abhishek7kulkarni.github.io/d3/)
+[Interactive Data Visualization](https://abhishek7kulkarni.github.io/d3/){:target="_blank" rel="noopener" }
