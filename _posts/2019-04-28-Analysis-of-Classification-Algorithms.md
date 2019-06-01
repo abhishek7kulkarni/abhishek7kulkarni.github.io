@@ -72,3 +72,19 @@ The mentioned models are built on the data by three approaches. In the first app
 |SVM – Linear kernel          |	98.59                  |	85.26             |
 
 Tab. 1
+
+In the second approach, the bootstrapping is carried out. The sampling with replacement is done on the data and the training data is prepared. The rest of the observations form our test data. The models are built using training data and the predictions are made on the test data. The accuracies are tabulated in Tab. 2.
+
+| Model	                      | Training Data Accuracy | 	Test Data Accuracy|
+| --------------------------- |------------------------| -------------------|
+| Logistic Regression	        | 97.89	                 | 92.91              |
+| Classification Trees        | 93.16	                 | 84.11              |
+| Bagging                     | 94.47                  | 89.40              |
+| Random Forest	              | 100	                   | 94.70              |
+| Boosting – Breiman        	| 100	                   | 92.71              |
+| Boosting – Freund           |	100	                   | 94.04              |
+| Boosting – Zhu            	| 100                    | 89.51              |
+| SVM – Radial Basis kernel 	| 98.16                  | 93.38              |
+| SVM – Polynomial kernel	    | 99.21                  | 89.40              |
+| SVM – Linear kernel       	| 99.21	                 |89.40               |
+Tab. 2
