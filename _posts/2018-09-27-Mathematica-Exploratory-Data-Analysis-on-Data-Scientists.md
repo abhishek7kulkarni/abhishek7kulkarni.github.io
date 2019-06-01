@@ -14,4 +14,4 @@ In this Mathematica project, we will explore the capabilities of Mathematica to 
 Dataset : [Kaggle](https://www.kaggle.com/kaggle/kaggle-survey-2017){:target="_blank" rel="noopener" }
 
 The complete Mathematica Document is available here:
-[Mathematica Document](https://abhishek7kulkarni.github.io/mathematica/eda.pdf){:target="_blank" rel="noopener" }
+[**Mathematica Document**](https://abhishek7kulkarni.github.io/mathematica/eda.pdf){:target="_blank" rel="noopener" }
