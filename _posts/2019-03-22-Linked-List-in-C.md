@@ -54,7 +54,7 @@ Sample Output:
 
 
 
-#Program:
+Program:
 
 ```c
 #include<stdio.h>
