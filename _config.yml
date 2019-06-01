@@ -19,7 +19,7 @@ locale                   : "en-US"
 title                    : "Abhishek Kulkarni"
 title_separator          : "-"
 name                     : "Abhishek Kulkarni"
-description              : "Data Science Portfolio"
+description              : "Portfolio"
 url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Abhishek Kulkarni"
   avatar           : "/images/about.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Data Science Portfolio"
+  bio              : "Portfolio"
   location         : "Dublin, Ireland"
   email            :
   links:
