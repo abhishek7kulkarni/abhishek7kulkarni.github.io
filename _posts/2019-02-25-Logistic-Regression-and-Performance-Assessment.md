@@ -6,6 +6,7 @@ header:
   image: "/images/ucdblue.JPG"
 categories: DataScience
 ---
+
 Let us explore the Titanic Dataset and use Logistic Regression to explore the survival of passengers on the Titanic. The dataset includes 1313 rows corresponding to the people that boarded the Titanic. We have 10 columns of which, we are interested in passengers’ Age, Gender, Class and Survival State. Of these 4 variables, Gender, Class and Survival State are categorical and Age is numeric.
 
 In our dataset, 51% of Age values are missing. Since this is quite a big share of our observations, it would be unwise to delete the rows with missing values. So, we will impute these missing values for Age. For this, we used Random Forest method in mice library. The resulting Age variable had roughly the similar means and boxplots as before, suggesting that the core statistics we not affected by the imputation. Since we intend to predict the survival state, which is a binary categorical variable, this dataset is perfect for Logistic Regression Analysis. If the response variable had more than 2 factors, we would have to use Multinomial Regression.

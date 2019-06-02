@@ -7,7 +7,6 @@ header:
 categories: DataScience
 ---
 
-
 Let us explore the US Congress Dataset and analyse clustering algorithms to examine if we have any groups of similar observations in data. The dataset consists of sixteen key votes from 1984 by 435 members of congress and their political party. The data contains lots of NA values and is binary (“y” for a ‘Yes’ vote and “n” for a ‘No’ vote). In this analysis, we converted the y/n data to 1/0 values, since it is easier to work with binary factored data.
 
 Since we have 47% of the rows with one or more NA values, it makes sense to impute these NA values rather than removing NA infested rows entirely or considering an NA value as a “No” vote. To impute, we used mice (Multivariate Imputation by Chained Equations) package in R. Here, we imputed by the method of logreg (Logistic Regression) which is suitable for binary data, as is our case.

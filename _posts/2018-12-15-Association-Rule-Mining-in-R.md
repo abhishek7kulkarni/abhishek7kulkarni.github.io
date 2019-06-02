@@ -7,7 +7,7 @@ header:
 categories: DataScience
 ---
 
-The dataset: A data set recording the disabilities of 21574 elderly
+**The dataset**: A data set recording the disabilities of 21574 elderly
 people in the United States of America was collected as part of the
 National Long Term Care Survey (NLTCS). Each person’s disability in
 sixteen tasks of daily living were recorded. Six of the tasks are
