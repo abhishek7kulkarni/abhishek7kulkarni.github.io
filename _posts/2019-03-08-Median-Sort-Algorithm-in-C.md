@@ -3,7 +3,7 @@ title: "Median Sort and Search in C"
 date: 2019-03-08
 tags: [Median Sort, Sort, Search, C, Algorithm, Benchmark, Chop Search]
 header:
-  image: "/images/liffey.JPG"
+  image: "/images/liffey.jpg"
 categories: Programming
 ---
 
