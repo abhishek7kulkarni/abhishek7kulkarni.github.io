@@ -231,7 +231,7 @@ plot(fit, method = "two-key plot")
 ![](/posts/1_files/figure-markdown_github/unnamed-chunk-6-1.png)
 
 
-<img src="{{ site.url }}{{ site.baseurl }}/posts/1_files/figure-markdown_github/unnamed-chunk-6-1.png" alt="Picture1">
+<img src="{{ site.url }}{{ site.baseurl }}/images/unnamed-chunk-6-1.png" alt="Picture1">
 
 It is evident from the Two-key plot that we have very few rules with
 support greater than 0.5. Most of the rules are equally distributed with
