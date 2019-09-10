@@ -115,7 +115,7 @@ fit<-sort(fit,by="support")
 plot(fit, method = "two-key plot")
 ```
 
-![](1_files/figure-markdown_github/unnamed-chunk-3-1.png)
+<img src="{{ site.url }}{{ site.baseurl }}/images/Association/unnamed-chunk-3-1.png" alt="Picture2">
 
 Let us increase the support and confidence thresholds to see if we can
 find interesting rules.
@@ -225,11 +225,6 @@ fit<-apriori(nltcs,parameter=list(support=sup, confidence=conf))
 fit<-sort(fit,by="support")
 plot(fit, method = "two-key plot")
 ```
-<a href="/posts/1_files/figure-markdown_github/unnamed-chunk-6-1.png"><img src="/posts/1_files/figure-markdown_github/unnamed-chunk-6-1.png"></a>
-![](1_files/figure-markdown_github/unnamed-chunk-6-1.png)
-![](unnamed-chunk-6-1.png)
-![](/posts/1_files/figure-markdown_github/unnamed-chunk-6-1.png)
-
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/Association/unnamed-chunk-6-1.png" alt="Picture1">
 
