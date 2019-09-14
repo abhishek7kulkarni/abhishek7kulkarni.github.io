@@ -1,9 +1,9 @@
 ---
 title: "Thesis: Machine Learning Applied To Build ‘Nowcasting’ Models to Predict Irish Rainfall"
 date: 2019-08-30
-tags: [Machine Learning, Forecasting, Data Science]
+tags: [Machine Learning, Forecasting, Data Science, Time Series]
 header:
-  image: "/images/liffey.jpg"
+  image: "/images/ucdsci.JPG"
 categories: DataScience
 ---
 
