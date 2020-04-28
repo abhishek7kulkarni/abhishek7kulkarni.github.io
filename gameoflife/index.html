@@ -33,12 +33,44 @@
     background:#ddd;
   }
   
+  .center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  }
+  
+  .ui-btn {
+	background:#92C8FF;
+	width: 70px;
+	height: 30px;
+  }
 </style>
 </head>
 <body onload="init()">
 
+<div style="width:800px; margin:0 auto;">
+<h1>Conway's Game of Life</h1>
+<br><br>
+Conway's Game of Life is a cellular automaton devised by the British mathematician John Horton Conway in 1970. This implementation is a tribute to him, since he passed away by Covid19 in April 2020. RIP John.
+<br><br>
+Let us denote the nodes as Coronavirus cases, with an objective of suppressing the number of Covid19 cases. After each iteration, some nodes die and some take birth.
+<br><br>
+
+
+
+
+<div class="center">
+<button id = "start" onclick="start()" class="ui-btn">START</button>
+</div>
+
+</div>
+
 <div id="grid" style="width:800px; margin:0 auto;"></div>
-<button id = "start" onclick="start()">START</button>
+
+<h3>Some useful links:</h3>
+<a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Wikipedia: Conway’s Game of Life</a><br>
+<a href="https://dailyvoice.com/new-jersey/mercer/obituaries/covid-19-kills-renowned-princeton-mathematician-game-of-life-inventor-john-conway-in-3-days/786461/">John Conway</a>
 
 <script>
 
