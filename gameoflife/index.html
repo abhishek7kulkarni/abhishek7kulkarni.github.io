@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script class="GameofLife" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<meta charset=utf-8 />
+<title>Conway's Game of Life</title>
+<style>
+  article, aside, figure, footer, header, hgroup, 
+  menu, nav, section { display: block; }
+  
+  ul{list-style:none;}
+  a{text-decoration:none;}
+
+  
+  #grid{
+    width:800px;
+    height:800px;
+    background:#eee;
+    padding:10px;
+    border-radius:10px;
+  }
+  
+  .box{
+    font-size:10px;
+    text-align:center;
+    float:left;
+    width:18px;
+    height:18px;
+    background:#fff;
+    border:1px solid #aaa;
+  }
+  .box:hover{
+    background:#ddd;
+  }
+  
+</style>
+</head>
+<body onload="init()">
+
+<div id="grid" style="width:800px; margin:0 auto;"></div>
+<button id = "start" onclick="start()">START</button>
+
+<script>
+
+var GRID_SIZE = 1600;
+var X = 40;
+var Y = 40;
+
+var x = new Array(X);
+for (var i = 0; i < x.length; i++) {
+	x[i] = new Array(X);
+}
+
+var box = '<div class="box" />';
+
+for(var i = 0; i<GRID_SIZE;i++){
+	$('#grid').append(box);
+}
+
+function init() {
+	for (var i = 0; i < X; i++)
+	{
+		for (var j = 0; j < Y; j++)
+		{
+			x[i][j] = Math.round(Math.random());
+		}
+	}
+
+	updateUI();
+}
+
+function updateUI() {
+	for (var i = 0; i < X; i++)
+	{
+		for (var j = 0; j < Y; j++)
+		{
+			var myvar = (i*X)+j;
+			if (x[i][j] == 1)
+			{
+				document.getElementsByClassName("box")[myvar].style.background = "grey";
+			}	
+			else
+			{
+				document.getElementsByClassName("box")[myvar].style.background = "white";
+			}
+		}
+	}
+}
+
+function start() {
+	y = JSON.parse(JSON.stringify(x));
+	
+	for (var i = 0; i < X; i++)
+	{
+		for (var j = 0; j < Y; j++)
+		{
+			if (x[i-1] === undefined)
+				x[i-1] = 0;
+			if (x[i+1] === undefined)
+				x[i+1] = 0;
+			
+			var nei_sum = 	x[i-1][j] +
+							x[i][j-1] +
+							x[i+1][j] +
+							x[i][j+1] +
+							
+							x[i-1][j-1] +
+							x[i-1][j+1] +
+							x[i+1][j-1] +
+							x[i+1][j+1];
+							
+			if (x[i][j] == 1)
+			{
+				if(nei_sum == 2 || nei_sum == 3)
+				{
+					y[i][j] = 1;
+				}
+				else
+				{
+					y[i][j] = 0;
+				}
+			}
+			else if (x[i][j] == 0 && nei_sum == 3)
+			{
+				y[i][j] = 1;
+			}
+			else
+				y[i][j] = x[i][j];
+		}
+	}
+
+	//console.log(JSON.stringify(x) === JSON.stringify(y));
+	
+	x = JSON.parse(JSON.stringify(y));
+	
+	updateUI();
+	
+	setTimeout(start, 50);
+}
+
+</script>  
+</body>
+</html>
