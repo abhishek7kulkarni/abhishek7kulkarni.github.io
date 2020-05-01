@@ -1,62 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Conway's Game of Life">
 <script class="GameofLife" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <meta charset=utf-8 />
 <title>Conway's Game of Life</title>
-<style>
-  article, aside, figure, footer, header, hgroup, 
-  menu, nav, section { display: block; }
-  
-  ul{list-style:none;}
-  a{text-decoration:none;}
-
-  
-  #grid{
-    width:800px;
-    height:800px;
-    background:#eee;
-    padding:10px;
-    border-radius:10px;
-  }
-  
-  .box{
-    font-size:10px;
-    text-align:center;
-    float:left;
-    width:18px;
-    height:18px;
-    background:#fff;
-    border:1px solid #aaa;
-  }
-  .box:hover{
-    background:#ddd;
-  }
-  
-  .center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 50px;
-  }
-  
-  .ui-btn {
-	background:#92C8FF;
-	width: 100px;
-	height: 30px;
-	margin:20px;
-  }
-  
-  .slider {
-	width: 300px;
-  }
-}
-</style>
+<link rel="stylesheet" type="text/css" href="style.css">
 </head>
-<body onload="init()" style="font-family:Arial, Helvetica, sans-serif;">
 
+<body onload="init()" style="font-family:Arial, Helvetica, sans-serif;">
 <div style="width:800px; margin:0 auto;">
 <h1>Conway's Game of Life</h1>
 <br><br>
@@ -70,9 +24,6 @@ Let us denote the nodes as Coronavirus cases, with an objective of suppressing t
 <li>Any dead cell with exactly three live neighbours becomes a live cell, as if by reproduction.
 </ul>
 <br><br>
-
-
-
 
 <div class="center">
 <button id = "start" onclick="start()" class="ui-btn">START</button>
@@ -95,125 +46,7 @@ SPEED
 </ul>
 </div>
 
-<script>
-console.log("Welcome to Console...");
-
-var timeOut;
-var speed = 50;
-
-var GRID_SIZE = 1600;
-var X = 40;
-var Y = 40;
-
-var x = new Array(X);
-for (var i = 0; i < x.length; i++) {
-	x[i] = new Array(X);
-}
-
-var box = '<div class="box" />';
-
-for(var i = 0; i<GRID_SIZE;i++){
-	$('#grid').append(box);
-}
-
-var rangeInput = document.getElementById("myRange");
-rangeInput.addEventListener('mouseup', function() {
-	speed = this.value;
-});
-
-
-function init() {
-	for (var i = 0; i < X; i++)
-	{
-		for (var j = 0; j < Y; j++)
-		{
-			x[i][j] = Math.round(Math.random());
-		}
-	}
-	
-	document.getElementById("stop").disabled = true;
-	
-	updateUI();
-}
-
-function updateUI() {
-	for (var i = 0; i < X; i++)
-	{
-		for (var j = 0; j < Y; j++)
-		{
-			var myvar = (i*X)+j;
-			if (x[i][j] == 1)
-			{
-				document.getElementsByClassName("box")[myvar].style.background = "grey";
-			}	
-			else
-			{
-				document.getElementsByClassName("box")[myvar].style.background = "white";
-			}
-		}
-	}
-}
-
-function start() {
-	
-	document.getElementById("start").disabled = true;
-	document.getElementById("stop").disabled = false;
-	
-	y = JSON.parse(JSON.stringify(x));
-	
-	for (var i = 0; i < X; i++)
-	{
-		for (var j = 0; j < Y; j++)
-		{
-			if (x[i-1] === undefined)
-				x[i-1] = 0;
-			if (x[i+1] === undefined)
-				x[i+1] = 0;
-			
-			var nei_sum = 	x[i-1][j] +
-							x[i][j-1] +
-							x[i+1][j] +
-							x[i][j+1] +
-							
-							x[i-1][j-1] +
-							x[i-1][j+1] +
-							x[i+1][j-1] +
-							x[i+1][j+1];
-							
-			if (x[i][j] == 1)
-			{
-				if(nei_sum == 2 || nei_sum == 3)
-				{
-					y[i][j] = 1;
-				}
-				else
-				{
-					y[i][j] = 0;
-				}
-			}
-			else if (x[i][j] == 0 && nei_sum == 3)
-			{
-				y[i][j] = 1;
-			}
-			else
-				y[i][j] = x[i][j];
-		}
-	}
-
-	//console.log(JSON.stringify(x) === JSON.stringify(y));
-	
-	x = JSON.parse(JSON.stringify(y));
-	
-	updateUI();
-	
-	timeOut = setTimeout(start, speed);
-}
-
-function stop() {
-	document.getElementById("start").disabled = false;
-	document.getElementById("stop").disabled = true;
-	clearTimeout(timeOut);
-}
-</script>  
+<script type="text/javascript" src="logic.js">
+</script>
 </body>
 </html>
