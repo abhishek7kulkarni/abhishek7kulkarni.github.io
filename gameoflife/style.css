@@ -1,0 +1,45 @@
+article, aside, figure, footer, header, hgroup, 
+menu, nav, section { display: block; }
+
+ul{list-style:none;}
+a{text-decoration:none;}
+
+
+#grid{
+	width:800px;
+	height:800px;
+	background:#eee;
+	padding:10px;
+	border-radius:10px;
+}
+
+.box{
+	font-size:10px;
+	text-align:center;
+	float:left;
+	width:18px;
+	height:18px;
+	background:#fff;
+	border:1px solid #aaa;
+}
+.box:hover{
+	background:#ddd;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 50px;
+}
+
+.ui-btn {
+	background:#92C8FF;
+	width: 100px;
+	height: 30px;
+	margin:20px;
+}
+
+.slider {
+	width: 300px;
+}
